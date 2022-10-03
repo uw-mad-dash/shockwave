@@ -1,0 +1,1 @@
+To generate the rpc stubs, use `sh protoc.sh`

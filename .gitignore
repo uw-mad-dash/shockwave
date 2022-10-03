@@ -1,0 +1,28 @@
+# Auto-generated gRPC files.
+scheduler/runtime/rpc_stubs/*pb2*.py
+
+# Python.
+*.ipynb_checkpoints
+*.pyc
+
+*DS_Store*
+*pycache*
+*pyc*
+*vscode*
+
+# nsys output
+*.sqlite
+*.qdrep
+
+.stack_trace.log
+
+scheduler/batch_simulation_figures
+scheduler/pickle_output
+scheduler/traces/simulation
+scheduler/traces/search
+
+*batch_simulation*
+
+*images/monet2photo/*.png
+
+*checkpoints*

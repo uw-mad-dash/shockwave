@@ -1,0 +1,120 @@
+LM (batch size 10)	python3 main.py --cuda --data %s/wikitext2 --batch_size 10	language_modeling	--steps	1	134583	1	gns	1	-1.000000	1418	0
+ResNet-18 (batch size 32)	python3 main.py --data_dir=%s/cifar10 --batch_size 32	image_classification/cifar10	--num_steps	1	143450	1	accordion	1	-1.000000	3338	55
+ResNet-50 (batch size 64)	python3 main.py -j 4 -a resnet50 -b 64 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	41840	1	gns	1	-1.000000	13462	64
+Transformer (batch size 64)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 64 -proj_share_weight	translation	-step	1	5842	1	accordion	1	-1.000000	2815	73
+Recommendation (batch size 8192)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 8192	recommendation	-n	1	44921	1	gns	1	-1.000000	3862	109
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	201344	1	accordion	1	-1.000000	9273	112
+ResNet-18 (batch size 64)	python3 main.py --data_dir=%s/cifar10 --batch_size 64	image_classification/cifar10	--num_steps	1	45353	1	accordion	1	-1.000000	2116	172
+Transformer (batch size 32)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 32 -proj_share_weight	translation	-step	1	6425	1	gns	1	-1.000000	1418	230
+ResNet-18 (batch size 64)	python3 main.py --data_dir=%s/cifar10 --batch_size 64	image_classification/cifar10	--num_steps	1	183791	1	accordion	1	-1.000000	8575	231
+Transformer (batch size 64)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 64 -proj_share_weight	translation	-step	1	3306	1	accordion	1	-1.000000	1593	277
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	259866	1	accordion	1	-1.000000	4385	305
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	175497	2	accordion	1	-1.000000	1942	346
+ResNet-18 (batch size 256)	python3 main.py --data_dir=%s/cifar10 --batch_size 256	image_classification/cifar10	--num_steps	1	7861	1	gns	1	-1.000000	1244	469
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	497806	1	accordion	1	-1.000000	8400	641
+ResNet-18 (batch size 256)	python3 main.py --data_dir=%s/cifar10 --batch_size 256	image_classification/cifar10	--num_steps	1	7861	1	gns	1	-1.000000	1244	663
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	177136	1	accordion	1	-1.000000	2989	737
+ResNet-50 (batch size 64)	python3 main.py -j 4 -a resnet50 -b 64 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	14716	1	gns	1	-1.000000	4735	799
+Recommendation (batch size 512)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 512	recommendation	-n	1	742598	1	accordion	1	-1.000000	4385	941
+Recommendation (batch size 4096)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 4096	recommendation	-n	1	201840	1	accordion	1	-1.000000	8051	942
+Transformer (batch size 128)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 128 -proj_share_weight	translation	-step	1	4041	1	accordion	1	-1.000000	3513	1054
+ResNet-50 (batch size 32)	python3 main.py -j 4 -a resnet50 -b 32 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	106188	1	accordion	1	-1.000000	18000	1064
+Recommendation (batch size 1024)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 1024	recommendation	-n	1	377026	1	gns	1	-1.000000	3513	1069
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	3336869	4	gns	1	-1.000000	16778	1106
+Recommendation (batch size 512)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 512	recommendation	-n	1	240138	1	accordion	1	-1.000000	1418	1179
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	49744	1	gns	1	-1.000000	2291	1304
+Recommendation (batch size 512)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 512	recommendation	-n	1	121931	1	static	1	-1.000000	720	1322
+ResNet-18 (batch size 256)	python3 main.py --data_dir=%s/cifar10 --batch_size 256	image_classification/cifar10	--num_steps	1	57999	4	gns	1	-1.000000	2465	1393
+Recommendation (batch size 8192)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 8192	recommendation	-n	1	38826	1	accordion	1	-1.000000	3338	1394
+ResNet-18 (batch size 256)	python3 main.py --data_dir=%s/cifar10 --batch_size 256	image_classification/cifar10	--num_steps	1	15577	1	accordion	1	-1.000000	2465	1532
+Recommendation (batch size 4096)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 4096	recommendation	-n	1	22437	1	gns	1	-1.000000	895	1546
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	218501	1	gns	1	-1.000000	3687	1577
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	768088	4	gns	1	-1.000000	3862	1583
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	96500	1	gns	1	-1.000000	1418	1585
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	572880	2	gns	1	-1.000000	4560	1585
+ResNet-50 (batch size 64)	python3 main.py -j 4 -a resnet50 -b 64 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	87205	2	gns	1	-1.000000	14684	1622
+ResNet-50 (batch size 32)	python3 main.py -j 4 -a resnet50 -b 32 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	29992	1	accordion	1	-1.000000	5084	1655
+Recommendation (batch size 4096)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 4096	recommendation	-n	1	53048	1	gns	1	-1.000000	2116	1722
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	123611	1	gns	1	-1.000000	2640	1798
+ResNet-18 (batch size 128)	python3 main.py --data_dir=%s/cifar10 --batch_size 128	image_classification/cifar10	--num_steps	1	76522	2	accordion	1	-1.000000	3513	1820
+ResNet-18 (batch size 128)	python3 main.py --data_dir=%s/cifar10 --batch_size 128	image_classification/cifar10	--num_steps	1	20807	1	gns	1	-1.000000	1767	1896
+LM (batch size 10)	python3 main.py --cuda --data %s/wikitext2 --batch_size 10	language_modeling	--steps	1	1625539	1	accordion	1	-1.000000	17127	1905
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	63351	1	accordion	1	-1.000000	1069	1990
+ResNet-18 (batch size 128)	python3 main.py --data_dir=%s/cifar10 --batch_size 128	image_classification/cifar10	--num_steps	1	224797	2	accordion	1	-1.000000	10320	2001
+Recommendation (batch size 512)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 512	recommendation	-n	1	387980	1	accordion	1	-1.000000	2291	2114
+Recommendation (batch size 8192)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 8192	recommendation	-n	1	93646	1	accordion	1	-1.000000	8051	2133
+ResNet-50 (batch size 16)	python3 main.py -j 4 -a resnet50 -b 16 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	45751	2	accordion	1	-1.000000	3513	2155
+ResNet-18 (batch size 64)	python3 main.py --data_dir=%s/cifar10 --batch_size 64	image_classification/cifar10	--num_steps	1	56584	1	accordion	1	-1.000000	2640	2185
+Recommendation (batch size 1024)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 1024	recommendation	-n	1	114728	1	gns	1	-1.000000	1069	2187
+ResNet-50 (batch size 32)	python3 main.py -j 4 -a resnet50 -b 32 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	15574	1	accordion	1	-1.000000	2640	2190
+ResNet-18 (batch size 128)	python3 main.py --data_dir=%s/cifar10 --batch_size 128	image_classification/cifar10	--num_steps	1	173572	4	gns	1	-1.000000	4036	2222
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	352968	1	gns	1	-1.000000	5956	2272
+Transformer (batch size 16)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 16 -proj_share_weight	translation	-step	1	32123	1	accordion	1	-1.000000	3687	2273
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	215323	1	gns	1	-1.000000	3164	2294
+Recommendation (batch size 1024)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 1024	recommendation	-n	1	807821	1	gns	1	-1.000000	7527	2313
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	74588	1	gns	1	-1.000000	1593	2374
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	167753	1	gns	1	-1.000000	2465	2560
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	83855	1	gns	1	-1.000000	3862	2563
+Recommendation (batch size 4096)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 4096	recommendation	-n	1	101183	1	accordion	1	-1.000000	4036	2595
+Recommendation (batch size 512)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 512	recommendation	-n	1	535822	1	accordion	1	-1.000000	3164	2599
+Recommendation (batch size 8192)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 8192	recommendation	-n	1	63194	1	gns	1	-1.000000	5433	2660
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	72477	1	accordion	1	-1.000000	3338	2775
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	211912	2	gns	1	-1.000000	3164	2824
+ResNet-18 (batch size 64)	python3 main.py --data_dir=%s/cifar10 --batch_size 64	image_classification/cifar10	--num_steps	1	105150	2	gns	1	-1.000000	2815	2858
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	42166	1	accordion	1	-1.000000	1942	2860
+Transformer (batch size 64)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 64 -proj_share_weight	translation	-step	1	6566	1	accordion	1	-1.000000	3164	2864
+ResNet-50 (batch size 32)	python3 main.py -j 4 -a resnet50 -b 32 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	23809	1	gns	1	-1.000000	4036	2875
+ResNet-18 (batch size 64)	python3 main.py --data_dir=%s/cifar10 --batch_size 64	image_classification/cifar10	--num_steps	1	116151	4	gns	1	-1.000000	1593	2878
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	270114	2	gns	1	-1.000000	2989	2884
+LM (batch size 10)	python3 main.py --cuda --data %s/wikitext2 --batch_size 10	language_modeling	--steps	1	347364	2	gns	1	-1.000000	3164	3012
+Recommendation (batch size 8192)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 8192	recommendation	-n	1	14469	1	gns	1	-1.000000	1244	3029
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	50053	1	accordion	1	-1.000000	1069	3124
+ResNet-18 (batch size 32)	python3 main.py --data_dir=%s/cifar10 --batch_size 32	image_classification/cifar10	--num_steps	1	120974	1	accordion	1	-1.000000	2815	3182
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	102303	2	gns	1	-1.000000	2815	3241
+Transformer (batch size 16)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 16 -proj_share_weight	translation	-step	1	56457	1	gns	1	-1.000000	6480	3339
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	207036	2	gns	1	-1.000000	2291	3387
+Recommendation (batch size 4096)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 4096	recommendation	-n	1	118707	1	gns	1	-1.000000	4735	3404
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	197818	1	accordion	1	-1.000000	3338	3429
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	563591	1	accordion	1	-1.000000	4211	3449
+ResNet-18 (batch size 128)	python3 main.py --data_dir=%s/cifar10 --batch_size 128	image_classification/cifar10	--num_steps	1	18758	1	accordion	1	-1.000000	1593	3450
+ResNet-50 (batch size 16)	python3 main.py -j 4 -a resnet50 -b 16 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	15026	1	accordion	1	-1.000000	1418	3452
+ResNet-18 (batch size 256)	python3 main.py --data_dir=%s/cifar10 --batch_size 256	image_classification/cifar10	--num_steps	1	94964	4	accordion	1	-1.000000	4036	3486
+ResNet-18 (batch size 128)	python3 main.py --data_dir=%s/cifar10 --batch_size 128	image_classification/cifar10	--num_steps	1	78364	1	accordion	1	-1.000000	6655	3515
+Transformer (batch size 16)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 16 -proj_share_weight	translation	-step	1	55727	2	accordion	1	-1.000000	4036	3659
+ResNet-50 (batch size 32)	python3 main.py -j 4 -a resnet50 -b 32 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	18399	2	accordion	1	-1.000000	2640	3698
+Recommendation (batch size 8192)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 8192	recommendation	-n	1	18529	1	accordion	1	-1.000000	1593	3766
+ResNet-50 (batch size 16)	python3 main.py -j 4 -a resnet50 -b 16 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	11328	1	accordion	1	-1.000000	1069	3792
+Transformer (batch size 16)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 16 -proj_share_weight	translation	-step	1	32123	1	accordion	1	-1.000000	3687	3827
+ResNet-50 (batch size 16)	python3 main.py -j 4 -a resnet50 -b 16 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	36661	2	gns	1	-1.000000	2815	3894
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	243976	2	gns	1	-1.000000	1942	3896
+ResNet-50 (batch size 64)	python3 main.py -j 4 -a resnet50 -b 64 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	23394	1	accordion	1	-1.000000	7527	3897
+ResNet-50 (batch size 32)	python3 main.py -j 4 -a resnet50 -b 32 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	43377	1	gns	1	-1.000000	7353	3919
+Recommendation (batch size 8192)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 8192	recommendation	-n	1	103801	1	gns	1	-1.000000	8924	3933
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	187507	1	accordion	1	-1.000000	3164	3955
+Recommendation (batch size 4096)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 4096	recommendation	-n	1	101183	1	accordion	1	-1.000000	4036	3958
+Recommendation (batch size 1024)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 1024	recommendation	-n	1	96054	1	gns	1	-1.000000	895	3965
+Recommendation (batch size 512)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 512	recommendation	-n	1	1392902	1	gns	1	-1.000000	8225	3969
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	115417	1	gns	1	-1.000000	2465	4007
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	166494	1	gns	1	-1.000000	1244	4008
+Transformer (batch size 64)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 64 -proj_share_weight	translation	-step	1	32226	2	gns	1	-1.000000	8575	4009
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	283201	1	accordion	1	-1.000000	2116	4055
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	597064	2	gns	1	-1.000000	16429	4077
+LM (batch size 80)	python3 main.py --cuda --data %s/wikitext2 --batch_size 80	language_modeling	--steps	1	76277	1	gns	1	-1.000000	3513	4078
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	221704	1	accordion	1	-1.000000	4735	4190
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	403650	4	accordion	1	-1.000000	3513	4217
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	239073	1	accordion	1	-1.000000	3513	4328
+LM (batch size 40)	python3 main.py --cuda --data %s/wikitext2 --batch_size 40	language_modeling	--steps	1	131805	1	gns	1	-1.000000	2815	4370
+LM (batch size 10)	python3 main.py --cuda --data %s/wikitext2 --batch_size 10	language_modeling	--steps	1	813861	1	accordion	1	-1.000000	8575	4402
+LM (batch size 5)	python3 main.py --cuda --data %s/wikitext2 --batch_size 5	language_modeling	--steps	1	189782	1	gns	1	-1.000000	1418	4422
+Recommendation (batch size 512)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 512	recommendation	-n	1	121931	1	static	1	-1.000000	720	4426
+ResNet-18 (batch size 256)	python3 main.py --data_dir=%s/cifar10 --batch_size 256	image_classification/cifar10	--num_steps	1	65813	2	accordion	1	-1.000000	5433	4561
+Transformer (batch size 32)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 32 -proj_share_weight	translation	-step	1	31114	2	accordion	1	-1.000000	3862	4584
+LM (batch size 20)	python3 main.py --cuda --data %s/wikitext2 --batch_size 20	language_modeling	--steps	1	48998	1	gns	1	-1.000000	720	4599
+Transformer (batch size 128)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 128 -proj_share_weight	translation	-step	1	828	1	gns	1	-1.000000	720	4605
+ResNet-18 (batch size 32)	python3 main.py --data_dir=%s/cifar10 --batch_size 32	image_classification/cifar10	--num_steps	1	207189	4	accordion	1	-1.000000	1593	4641
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	280608	1	accordion	1	-1.000000	4735	4805
+Recommendation (batch size 4096)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 4096	recommendation	-n	1	18050	1	static	1	-1.000000	720	4825
+Transformer (batch size 16)	python3 train.py -data %s/translation/multi30k.atok.low.pt -batch_size 16 -proj_share_weight	translation	-step	1	27566	1	accordion	1	-1.000000	3164	4891
+Recommendation (batch size 2048)	python3 train.py --data_dir %s/ml-20m/pro_sg/ --batch_size 2048	recommendation	-n	1	208189	1	gns	1	-1.000000	3513	4939
+ResNet-18 (batch size 32)	python3 main.py --data_dir=%s/cifar10 --batch_size 32	image_classification/cifar10	--num_steps	1	293476	1	gns	1	-1.000000	6829	4968
+ResNet-50 (batch size 32)	python3 main.py -j 4 -a resnet50 -b 32 %s/imagenet/	image_classification/imagenet	--num_minibatches	1	5279	1	static	1	-1.000000	895	5011

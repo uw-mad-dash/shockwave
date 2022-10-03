@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+import "common.proto";
+
+service IteratorToScheduler {
+    // Initializes the job and returns the initial lease.
+    rpc InitJob (InitJobRequest) returns (UpdateLeaseResponse);
+    // Updates the lease.
+    rpc UpdateLease (UpdateLeaseRequest) returns (UpdateLeaseResponse);
+    // Lets the scheduler be aware of resource requirement change.
+    rpc UpdateResourceRequirement (UpdateResourceRequirementRequest) returns (Empty);
+}
+
+message InitJobRequest {
+    uint64 job_id = 1;
+}
+
+message UpdateLeaseRequest {
+    uint64 job_id = 1;
+    uint64 worker_id = 2;
+    uint64 steps = 3;
+    double duration = 4;
+    uint64 max_steps = 5;
+    double max_duration = 6;
+}
+
+message UpdateLeaseResponse {
+    uint64 max_steps = 1;
+    double max_duration = 2;
+    double extra_time = 3;
+    uint64 run_time_so_far = 4;
+    uint64 deadline = 5;
+}
+
+message UpdateResourceRequirementRequest {
+    uint64 job_id = 1;
+    uint64 worker_id = 2;
+    bool big_bs = 3;
+    bool small_bs = 4;
+}

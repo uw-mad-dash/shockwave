@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+import "common.proto";
+
+service SchedulerToWorker {
+    // Starts a job on worker.
+    rpc RunJob (RunJobRequest) returns (Empty) {}
+    // Ends a job on worker.
+    rpc KillJob (KillJobRequest) returns (Empty) {}
+    // Resets the worker.
+    rpc Reset (Empty) returns (Empty) {}
+    // Shuts down the worker.
+    rpc Shutdown (Empty) returns (Empty) {}
+}
+
+message JobDescription {
+    uint64 job_id = 1;
+    string job_type = 2;
+    string command = 3;
+    string working_directory = 4;
+    bool needs_data_dir = 5;
+    string num_steps_arg = 6;
+    uint64 num_steps = 7;
+    bool has_duration = 8;
+    uint64 duration = 9;
+    string mode = 10;
+    uint64 mps_thread_percentage = 11;
+}
+
+message RunJobRequest {
+    repeated JobDescription job_descriptions = 1;
+    uint64 worker_id = 2;
+    uint64 round_id = 3;
+}
+
+message KillJobRequest {
+    uint64 job_id = 1;
+}

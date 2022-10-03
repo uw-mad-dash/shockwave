@@ -1,0 +1,11 @@
+{
+    "future_rounds": 20,
+    "k": 1e5,
+    "lambda": 5.0,
+    "rhomax": 1.0,
+    "log_approximation_bases": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+    "gpu_ram": 16,
+    "solver_rel_gap": 1e-3,
+    "solver_num_threads": 24,
+    "solver_timeout": 15
+}
