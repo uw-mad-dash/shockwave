@@ -1,6 +1,6 @@
 # Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning
 
-This repository contains the source code implementation of the [NSDI '23](https://www.usenix.org/conference/nsdi23) paper [Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning](https://www.usenix.org/conference/nsdi23/presentation/zheng).
+This repository contains the source code implementation of the [NSDI '23](https://www.usenix.org/conference/nsdi23) paper [Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning](https://arxiv.org/abs/2210.00093).
 
 We built our implementation atop [Gavel](https://github.com/stanford-futuredata/gavel), the open-sourced codebase of the [OSDI '20](https://www.usenix.org/conference/osdi20) paper [Heterogeneity-Aware Cluster Scheduling Policies for Deep Learning Workloads](https://www.usenix.org/conference/osdi20/presentation/narayanan-deepak). We would like to thank the Gavel authors for open-sourcing their implementation!
 
@@ -51,11 +51,12 @@ To reproduce our canonical results in simulation in ~10 minutes, run [`scheduler
 ## References
 
 ```
-@inproceedings{zheng2023shockwave,
-  title={Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning},
-  author={Zheng, Pengfei and Pan, Rui and Khan, Tarannum and Venkataraman, Shivaram and Akella, Aditya},
-  booktitle={20th USENIX Symposium on Networked Systems Design and Implementation (NSDI 23)},
-  pages={???--???},
-  year={2023}
+@misc{zheng2022shockwave,
+      title={Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning}, 
+      author={Pengfei Zheng and Rui Pan and Tarannum Khan and Shivaram Venkataraman and Aditya Akella},
+      year={2022},
+      eprint={2210.00093},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
 }
 ```
