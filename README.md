@@ -39,7 +39,7 @@ pip install -r scheduler/requirements.txt
 cd scheduler; make
 ```
 
-In addition to the software dependencies required to run [Gavel](https://github.com/stanford-futuredata/gavel), running Shockwave also requires the [Gurobi Optimizer](https://www.gurobi.com/). An academic license can be requested [here](https://www.gurobi.com/downloads/end-user-license-agreement-academic/). Note that you might need to connect to your university's network or use a VPN to download Gurobi. Please see the Gurobi website for more details.
+In addition to the software dependencies required to run [Gavel](https://github.com/stanford-futuredata/gavel), running Shockwave also requires the [Gurobi Optimizer](https://www.gurobi.com/). An academic license can be requested [here](https://www.gurobi.com/features/academic-named-user-license/). Note that you might need to connect to your university's network or use a VPN to download Gurobi. Please see the Gurobi website for more details.
 
 ## Getting Started
 
